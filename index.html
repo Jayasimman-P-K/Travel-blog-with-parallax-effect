@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traval Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class= "zoom">
+        <img src="mountain1.png" id="layer1">
+        <img src="mountain2.png" id="layer2">
+        <img src="text.png" id="layer3">
+    </section>
+    <section class="content">
+        <h2>THIS IS MY FIRST TRAVEL BLOG Page</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus dolore ab dignissimos doloribus explicabo, quis molestiae tempora voluptatum quam eum nostrum fugiat laborum perferendis dolorum aperiam nihil. Ipsam, labore!</p>
+    </section>
+    <script type="text/javascript">
+        var layer1 =document.getElementById("layer1")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/5) + "%";
+        });
+
+        var layer2 = document.getElementById("layer2")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + "%";
+            layer2.style.left = scroll/50 + "%";
+        });
+
+        var layer3 = document.getElementById("layer3")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + "%";
+            layer3.style.top = -scroll/20 + "%";
+        });
+    </script>
+</body>
+</html>
